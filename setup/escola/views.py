@@ -1,6 +1,9 @@
 from rest_framework import viewsets, generics
 from escola.models import Curso,Aluno, Matricula
 from escola.serializer import AlunoSerializer, AlunoSerializerV2, CursoSerializer, MatriculaSerializer, ListaMatriculasAlunoSerializer, ListaAlunosMatriculadosSerializer
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 
 # Create your views here.

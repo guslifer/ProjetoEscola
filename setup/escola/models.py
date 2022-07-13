@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ImageField
 
 # Create your models here.
 
@@ -8,6 +9,7 @@ class Aluno (models.Model):
     cpf = models.CharField(max_length=11)
     celular = models.CharField(max_length=11)
     data_nascimento = models.DateField()
+    foto = models.ImageField(blank=True)
 
     def __str__(self):
         return self.nome
